@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>facebook</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5d1d6e752f.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -18,65 +20,234 @@
             <div class="box">
                 <label for="fname"><strong> Email</strong></label><br>
                 <input type="email" id="email" name="email"><br>
-                <input type="checkbox">
-                <span>Keep me logged in</span>
+                <input type="checkbox" id="log">
+                <label id="log" for="log" class="h-text">Keep me logged in</label>
             </div>
             <div class="box">
                 <label for="Password"><strong>Password</strong></label><br>
                 <input type="password" id="password" name="password"><br>
-                <span>Forget your password</span>
+                <a id="log" class="h-text" href="" target="_blank">
+                    Forget your password?
+                </a>
             </div>
             <div class="box"><button><strong> Log In</strong> </button></div>
         </div>
 
     </header>
     <main>
+
         <div class="img">
-            <img src="./img/facebook.png" alt="" />
+            <h2>Facebook helps you connect and share with <br> the pepole in your life</h2>
+            <img src="./img/facebook-removebg-preview.png" alt="" />
         </div>
         <div class="sing-form">
-            <h1>Sing Up</h1>
-            <h3>Its free and always will be</h3>
+            <h2>Sign Up</h2>
+            <h4>Its free and always will be</h4>
             <hr><br>
-            <form>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="email">Re-enter Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="password">New Password:</label>
-                <input type="password" id="password" name="password"><br><br>
-                <label for="sex">I am:</label>
-                <select name="gender">
+            <form class="form">
+                <label class="lv" for="fname">First name :</label>
+                <input class="in in-w" type="text" id="fname" name="fname"><br>
+                <label class="lv" for="lname">Last name :</label>
+                <input class="in in-w" type="text" id="lname" name="lname"><br>
+                <label class="lv" for="email">Your Email :</label>
+                <input class="in in-w" type="email" id="email" name="email"><br>
+                <label class="lv" for="email">Re-enter Email :</label>
+                <input class="in in-w" type="email" id="email" name="email"><br>
+                <label class="lv" for="password">New Password :</label>
+                <input class="in in-w" type="password" id="password" name="password"><br>
+                <label class="lv" for="sex">I am :</label>
+                <select id="gender" class="in in-w1" name="gender">
                     <option value="none" selected>Gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">other</option>
-                </select><br><br>
-                <label for="Birthday">Birthday:</label>
-                <input type="date" id="birthday" name="birthday"><br><br>
-                <a href="" target="_blank">Why do i need to provide my birthday?</a>
-            </form><br>
-            <button id="btn-sing">Sign Up</button><br> <br>
+                </select><br>
+                <label class="lv" for="Birthday">Birthday :</label>
+                <select class="in in-w-2" name="">
+                    <option value="none" selected>Month</option>
+                    <option value="male">Jan</option>
+                    <option value="female">Feb</option>
+                    <option value="other">Mar</option>
+                    <option value="male">Apr</option>
+                    <option value="female">May</option>
+                    <option value="other">Jun</option>
+                    <option value="male">Jul</option>
+                    <option value="female">Aug</option>
+                    <option value="other">Sep</option>
+                    <option value="male">Oct</option>
+                    <option value="female">Nov</option>
+                    <option value="other">Dec</option>
+                </select>
+                <select class="in in-w-2" name="day">
+                    <option value="none" selected>Day</option>
+                    <option value="male">1</option>
+                    <option value="female">2</option>
+                    <option value="other">3</option>
+                    <option value="male">4</option>
+                    <option value="female">5</option>
+                    <option value="other">6</option>
+                    <option value="male">7</option>
+                    <option value="female">8</option>
+                    <option value="other">9</option>
+                    <option value="male">10</option>
+                    <option value="female">11</option>
+                    <option value="other">12</option>
+                    <option value="male">13</option>
+                    <option value="female">14</option>
+                    <option value="other">15</option>
+                    <option value="male">16</option>
+                    <option value="female">17</option>
+                    <option value="other">18</option>
+                    <option value="male">19</option>
+                    <option value="female">20</option>
+                    <option value="other">21</option>
+                    <option value="male">22</option>
+                    <option value="female">23</option>
+                    <option value="other">24</option>
+                    <option value="male">25</option>
+                    <option value="female">26</option>
+                    <option value="other">27</option>
+                    <option value="male">28</option>
+                    <option value="female">29</option>
+                    <option value="other">30</option>
+                    <option value="other">31</option>
+                </select>
+                <select class="in in-w-2" name="year">
+                    <option value="none" selected>Year</option>
+                    <option value="male">2004</option>
+                    <option value="female">2003</option>
+                    <option value="other">2002</option>
+                    <option value="male">2001</option>
+                    <option value="female">2000</option>
+                    <option value="other">1999</option>
+                    <option value="male">1998</option>
+                    <option value="female">1997</option>
+                    <option value="other">1996</option>
+                    <option value="male">1995</option>
+                    <option value="female">1994</option>
+                    <option value="other">1993</option>
+                    <option value="male">1992</option>
+                    <option value="female">1991</option>
+                    <option value="other">1990</option>
+                    <option value="male">1989</option>
+                    <option value="female">1988</option>
+                    <option value="other">1987</option>
+                    <option value="male">1986</option>
+                    <option value="female">1985</option>
+                    <option value="other">1984</option>
+                    <option value="male">1983</option>
+                    <option value="female">1982</option>
+                    <option value="other">1981</option>
+                    <option value="male">1980</option>
+                    <option value="female">1979</option>
+                    <option value="other">1978</option>
+                    <option value="male">1977</option>
+                    <option value="female">1976</option>
+                    <option value="other">1975</option>
+                    <option value="other">1974</option>
+                    <option value="male">1973</option>
+                    <option value="female">1972</option>
+                    <option value="other">1971</option>
+                    <option value="male">1970</option>
+                    <option value="female">1969</option>
+                    <option value="other">1968</option>
+                    <option value="male">1966</option>
+                    <option value="female">1965</option>
+                    <option value="other">1964</option>
+                    <option value="male">1963</option>
+                    <option value="female">1962</option>
+                    <option value="other">1961</option>
+                    <option value="male">1960</option>
+                    <option value="female">1959</option>
+                    <option value="other">1958</option>
+                    <option value="male">1957</option>
+                    <option value="female">1956</option>
+                    <option value="other">1955</option>
+                    <option value="male">1954</option>
+                    <option value="female">1953</option>
+                    <option value="other">1952</option>
+                    <option value="male">1951</option>
+                    <option value="female">1950</option>
+                    <option value="other">1949</option>
+                    <option value="male">1948</option>
+                    <option value="female">1947</option>
+                    <option value="other">1946</option>
+                    <option value="male">1945</option>
+                    <option value="female">1944</option>
+                    <option value="other">1943</option>
+                    <option value="other">1942</option>
+                    <option value="male">1941</option>
+                    <option value="female">1940</option>
+                    <option value="other">1939</option>
+                    <option value="male">1938</option>
+                    <option value="female">1937</option>
+                    <option value="other">1936</option>
+                    <option value="other">1935</option>
+                    <option value="male">1934</option>
+                    <option value="female">1933</option>
+                    <option value="other">1932</option>
+                    <option value="male">1931</option>
+                    <option value="female">1930</option>
+                    <option value="other">1929</option>
+                    <option value="male">1928</option>
+                    <option value="female">1927</option>
+                    <option value="other">1926</option>
+                    <option value="male">1925</option>
+                    <option value="female">1924</option>
+                    <option value="other">1923</option>
+                    <option value="male">1922</option>
+                    <option value="female">1921</option>
+                    <option value="other">1920</option>
+                    <option value="male">1919</option>
+                    <option value="female">1918</option>
+                    <option value="other">1917</option>
+                    <option value="male">1916</option>
+                    <option value="female">1915</option>
+                    <option value="other">1914</option>
+                    <option value="male">1913</option>
+                    <option value="female">1912</option>
+                    <option value="other">1911</option>
+                    <option value="male">1910</option>
+                    <option value="female">1909</option>
+                    <option value="other">1908</option>
+                    <option value="male">1907</option>
+                    <option value="female">1906</option>
+                    <option value="other">1905</option>
+                    <option value="other">1904</option>
+                </select>
+                <br><br>
+                <a class="smle" href="" target="_blank">
+                    <h6>
+                        Why do I need to provide my birthday?
+                    </h6>
+                </a>
+
+            </form>
+            <button class="in" id="myBtn">Sign Up</button><br><br>
             <hr><br>
-            <p><span class="why">Create a page</span> for a celebrity, band or business</p>
+            <p><a href="" target="_blank">Create a page</a> for a celebrity, band or business</p>
 
         </div>
     </main>
     <div class="lng">
-        <p class="lng-list">English(US)</p>
-        <p class="lng-list">Espanol</p>
-        <p class="lng-list">Portuges(Brasil)</p>
-        <p class="lng-list">Francais(France)</p>
-        <p class="lng-list">Deutsch</p>
-        <p class="lng-list">Italiano</p>
+        <a href="" class="lng-list">English(US)</a>
+        <a href="" class="lng-list">Español
+        </a>
+        <a href="" class="lng-list">Português (Brasil)
+        </a>
+        <a href="" class="lng-list">Français (France)</a>
+        <a href="" class="lng-list">Deutsch</a>
+        <a href="" class="lng-list">Italiano</a>
+        <a href="" class="lng-list">‏اردو</a>
+        <a href="" class="lng-list">हिन्दी</a>
+        <a href="" class="lng-list">中文(台灣)</a>
+        <a href="" class="lng-list">日本語</a>
+        <a href=""><i class="fa-solid fa-angles-right"></i></a>
+
     </div>
     <hr>
     <div class="footer">
-        <p> Facebook @ 2011</p>
+        <p> Facebook <i class="fa-solid fa-copyright"></i> 2011</p>
         <a class="list" href="" target="_blank">English(US)</a>
         <div class="ft-last">
             <a class="list" href="" target="_blank">Mobile</a>
@@ -94,6 +265,219 @@
             <a class="list" href="" target="_blank"> Help</a>
         </div>
     </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Sign Up</h1>
+            <p>It's quick and easy.</p>
+            <hr class="hr">
+
+            <input aria-required="true" placeholder="First name" required class="in" type="text" id="fname" name="fname"
+                aria-invalid="true">
+            <input aria-required="true" placeholder="Surename" required class="in" type="text" id="sname" name="sname"
+                aria-invalid="true">
+            <input aria-required="true" placeholder="Mobile number or email address" required class="in"
+                type="email number" id="email-number" name="email-number" aria-invalid="true">
+            <input aria-required="true" placeholder="New password" required class="in" type="password" id="email-number"
+                name="email-number" aria-invalid="true">
+
+
+            <h5 class="" for="Birthday">Date of birth <i class="fa-solid fa-circle-question"></i></h5>
+            <select class="bd" name="">
+                <option value="none" selected>Month</option>
+                <option value="male">Jan</option>
+                <option value="female">Feb</option>
+                <option value="other">Mar</option>
+                <option value="male">Apr</option>
+                <option value="female">May</option>
+                <option value="other">Jun</option>
+                <option value="male">Jul</option>
+                <option value="female">Aug</option>
+                <option value="other">Sep</option>
+                <option value="male">Oct</option>
+                <option value="female">Nov</option>
+                <option value="other">Dec</option>
+            </select>
+            <select class="bd" name="day">
+                <option value="none" selected>Day</option>
+                <option value="male">1</option>
+                <option value="female">2</option>
+                <option value="other">3</option>
+                <option value="male">4</option>
+                <option value="female">5</option>
+                <option value="other">6</option>
+                <option value="male">7</option>
+                <option value="female">8</option>
+                <option value="other">9</option>
+                <option value="male">10</option>
+                <option value="female">11</option>
+                <option value="other">12</option>
+                <option value="male">13</option>
+                <option value="female">14</option>
+                <option value="other">15</option>
+                <option value="male">16</option>
+                <option value="female">17</option>
+                <option value="other">18</option>
+                <option value="male">19</option>
+                <option value="female">20</option>
+                <option value="other">21</option>
+                <option value="male">22</option>
+                <option value="female">23</option>
+                <option value="other">24</option>
+                <option value="male">25</option>
+                <option value="female">26</option>
+                <option value="other">27</option>
+                <option value="male">28</option>
+                <option value="female">29</option>
+                <option value="other">30</option>
+                <option value="other">31</option>
+            </select>
+            <select class="bd" name="year">
+                <option value="none" selected>Year</option>
+                <option value="male">2004</option>
+                <option value="female">2003</option>
+                <option value="other">2002</option>
+                <option value="male">2001</option>
+                <option value="female">2000</option>
+                <option value="other">1999</option>
+                <option value="male">1998</option>
+                <option value="female">1997</option>
+                <option value="other">1996</option>
+                <option value="male">1995</option>
+                <option value="female">1994</option>
+                <option value="other">1993</option>
+                <option value="male">1992</option>
+                <option value="female">1991</option>
+                <option value="other">1990</option>
+                <option value="male">1989</option>
+                <option value="female">1988</option>
+                <option value="other">1987</option>
+                <option value="male">1986</option>
+                <option value="female">1985</option>
+                <option value="other">1984</option>
+                <option value="male">1983</option>
+                <option value="female">1982</option>
+                <option value="other">1981</option>
+                <option value="male">1980</option>
+                <option value="female">1979</option>
+                <option value="other">1978</option>
+                <option value="male">1977</option>
+                <option value="female">1976</option>
+                <option value="other">1975</option>
+                <option value="other">1974</option>
+                <option value="male">1973</option>
+                <option value="female">1972</option>
+                <option value="other">1971</option>
+                <option value="male">1970</option>
+                <option value="female">1969</option>
+                <option value="other">1968</option>
+                <option value="male">1966</option>
+                <option value="female">1965</option>
+                <option value="other">1964</option>
+                <option value="male">1963</option>
+                <option value="female">1962</option>
+                <option value="other">1961</option>
+                <option value="male">1960</option>
+                <option value="female">1959</option>
+                <option value="other">1958</option>
+                <option value="male">1957</option>
+                <option value="female">1956</option>
+                <option value="other">1955</option>
+                <option value="male">1954</option>
+                <option value="female">1953</option>
+                <option value="other">1952</option>
+                <option value="male">1951</option>
+                <option value="female">1950</option>
+                <option value="other">1949</option>
+                <option value="male">1948</option>
+                <option value="female">1947</option>
+                <option value="other">1946</option>
+                <option value="male">1945</option>
+                <option value="female">1944</option>
+                <option value="other">1943</option>
+                <option value="other">1942</option>
+                <option value="male">1941</option>
+                <option value="female">1940</option>
+                <option value="other">1939</option>
+                <option value="male">1938</option>
+                <option value="female">1937</option>
+                <option value="other">1936</option>
+                <option value="other">1935</option>
+                <option value="male">1934</option>
+                <option value="female">1933</option>
+                <option value="other">1932</option>
+                <option value="male">1931</option>
+                <option value="female">1930</option>
+                <option value="other">1929</option>
+                <option value="male">1928</option>
+                <option value="female">1927</option>
+                <option value="other">1926</option>
+                <option value="male">1925</option>
+                <option value="female">1924</option>
+                <option value="other">1923</option>
+                <option value="male">1922</option>
+                <option value="female">1921</option>
+                <option value="other">1920</option>
+                <option value="male">1919</option>
+                <option value="female">1918</option>
+                <option value="other">1917</option>
+                <option value="male">1916</option>
+                <option value="female">1915</option>
+                <option value="other">1914</option>
+                <option value="male">1913</option>
+                <option value="female">1912</option>
+                <option value="other">1911</option>
+                <option value="male">1910</option>
+                <option value="female">1909</option>
+                <option value="other">1908</option>
+                <option value="male">1907</option>
+                <option value="female">1906</option>
+                <option value="other">1905</option>
+                <option value="other">1904</option>
+            </select>
+            <h5 class="gender" for="Birthday">Gender <i class="fa-solid fa-circle-question"></i></h5>
+            <form>
+                <span class="gn_">
+                    <label class="lv gn-lv" for="html"> Female</label>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                </span>
+                <span class="gn_">
+                    <label class="lv" for="css">Male</label>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                </span>
+                <span class="gn_">
+                    <label class="lv" for="javascript">Custom</label>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                </span>
+
+            </form>
+            <div class="pp">
+                <h5>People who use our service may have uploaded your contact information to Facebook. <a href="http://"
+                        target="_blank" rel="noopener noreferrer">Learn more.</a></h5>
+                <h5>By clicking Sign Up, you agree to our <a href="http://" target="_blank"
+                        rel="noopener noreferrer">Terms</a>,<a href="http://" target="_blank" rel="noopener noreferrer">
+                        Data Policy</a> and <a href="http://" target="_blank" rel="noopener noreferrer">Cookie
+                        Policy</a>.
+                    You may receive SMS notifications from us and can opt out at any time.</h5>
+            </div>
+            <br>
+            <button class="in" id="sign-up" type="submit">Sign Up</button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

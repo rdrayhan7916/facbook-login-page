@@ -3,14 +3,15 @@
 }
 
 #header {
-    background-color: rgb(14, 14, 139);
+    background-color: #1f1f7c;
     display: flex;
-    padding: 5px;
+    padding: 0px;
 }
 
 #logo {
-    width: 200pt;
-    height: 75px;
+    width: 160pt;
+    height: 80px;
+    margin-left: 30px;
 }
 
 #form {
@@ -18,11 +19,13 @@
     position: absolute;
     right: 0;
     color: white;
-    margin-right: 20px;
+    margin-right: 10px;
+
 }
 
 .box {
-    margin: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -35,25 +38,37 @@ button {
 }
 
 main {
+    padding-top: 10px;
     display: flex;
     justify-content: space-around;
-    background-color: hsl(0, 0%, 90%);
-    padding-bottom: 50px;
+    /* background-color: hsl(0, 0%, 90%); */
+    background-image: linear-gradient(white, rgb(216, 208, 208));
+    padding-bottom: 20px;
+
 }
 
-
+span {
+    color: white;
+}
 
 .why {
     color: blue;
 }
 
-#btn-sing {
+#myBtn {
     color: azure;
     font-weight: 500;
-    background-color: rgb(113, 187, 39);
-    margin-left: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
+    background-color: rgb(71, 133, 9);
+    margin-left: 180px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid black;
+}
+
+#myBtn:hover {
+    pointer-events: fill;
+    box-shadow: 5px;
+    background-color: brown;
 }
 
 .sing-form {
@@ -65,8 +80,8 @@ main {
     color: blue;
     display: flex;
     background-color: azure;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
 }
 
@@ -77,12 +92,14 @@ main {
 
 .footer {
     display: flex;
-    margin-top: 5px;
+    margin-top: px;
     padding-bottom: 10px;
+    margin-left: 10px;
 }
 
 a {
     text-decoration: none;
+    color: rgb(74, 74, 173);
 }
 
 .list {
@@ -96,4 +113,183 @@ a {
     right: 0;
     color: white;
     margin-right: 20px;
+}
+
+.in {
+
+    margin-top: 5px;
+    text-align: center;
+}
+
+.h-text {
+    color: rgb(223, 218, 218);
+    margin-top: 6px !important;
+
+
+}
+
+#log {
+    margin-top: 6px !important;
+
+}
+
+
+.in {
+    height: 30px;
+
+}
+
+.in-w {
+    width: 210px;
+}
+
+.in-w1 {
+    width: 111px;
+}
+
+.in-w-2 {
+    width: 70px;
+}
+
+.lv {
+    text-align: right !important;
+    color: #282830;
+    font-weight: 550;
+}
+
+.form {
+    text-align: right;
+
+}
+
+#gender {
+    margin-right: 107px !important;
+
+}
+
+.smle {
+    font-weight: 300;
+
+
+}
+
+h2 {
+    color: rgb(34, 34, 77);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+    font-size: 10px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(255, 255, 255, .8);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: #888;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#email-number {
+    width: 85%;
+}
+
+.bd {
+    width: 28%;
+    height: 30px;
+    margin-right: 2px;
+}
+
+h5 {
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.gender {
+    margin-bottom: 10px;
+}
+
+.gn_ {
+    border: 1px solid gray;
+    padding: 8px 22px;
+    margin-top: 5px;
+    margin-right: 11px;
+
+}
+
+#sign-up {
+    color: azure;
+    font-weight: 900;
+    background-color: #00a400;
+    margin-left: 120px;
+    padding-left: 50px;
+    padding-right: 70px;
+    border-radius: 7px;
+
+}
+
+.hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pp {
+    font-weight: normal;
+    color: #6b5f5f;
+}
+
+::placeholder {
+    text-align: start;
+
 }
